@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amrlabib/react-native-appstate-hook.git"
+    "url": "git+https://github.com/valleyelectronics/react-native-appstate-hook.git"
   },
   "keywords": [
     "react",
@@ -25,9 +25,9 @@
   "author": "amrlabib",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/amrlabib/react-native-appstate-hook/issues"
+    "url": "https://github.com/valleyelectronics/react-native-appstate-hook/issues"
   },
-  "homepage": "https://github.com/amrlabib/react-native-appstate-hook#readme",
+  "homepage": "https://github.com/valleyelectronics/react-native-appstate-hook#readme",
   "peerDependencies": {
     "react": "^16.8.0",
     "react-native": "^0.59.0"
