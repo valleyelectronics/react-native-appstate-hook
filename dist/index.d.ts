@@ -14,4 +14,6 @@ declare module "react-native-appstate-hook" {
   function useAppState(settings?: AppStateHookSettings): AppStateHookResult;
 
   export default useAppState;
+  export function useOnForeground(callback: () => void)
+  export function useOnBackground(callback: () => void)
 }
