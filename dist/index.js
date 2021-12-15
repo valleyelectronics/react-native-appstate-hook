@@ -30,10 +30,10 @@ export default function useAppState(settings) {
   return { appState };
 }
 
-export function useOnAppComesToForeground(callback) {
+export function useOnForeground(callback) {
   return useAppState({ onForeground: callback });
 }
 
-export function useOnAppGoesToBackground(callback) {
+export function useOnBackground(callback) {
   return useAppState({ onBackground: callback });
 }
