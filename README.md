@@ -33,6 +33,14 @@ export default function App() {
     onBackground: () => console.warn('App went to background'),
   });
 
+  useOnForeground(() => {
+    console.log('Short hook: Come to foreground')
+  })
+
+  useOnBackground(() => {
+    console.log('Short hook: Going to background')
+  })
+
   return (
     <View style={{textAlign: 'center', backgroundColor :'white', flex: 1, justifyContent: 'center'}}>
       <Text>App State is: {appState}</Text>
@@ -44,6 +52,8 @@ export default function App() {
 ```
 
 ---
+
+# useAppState
 
 ## Settings
 
@@ -60,3 +70,16 @@ export default function App() {
 | key | Type | Description |
 | --- | --- | ---- |
 | appState | string | app state it can be one of the following values `active`, `inactive`, or `background` |
+
+
+# useOnForeground
+
+| key | Type | Required | Description |
+| --- | --- | --- | ---- |
+| _ | Function | Yes | callback function to be executed once app go to foreground |
+
+# useOnBackground
+
+| key | Type | Required | Description |
+| --- | --- | --- | ---- |
+| _ | Function | Yes | callback function to be executed once app go to background |
